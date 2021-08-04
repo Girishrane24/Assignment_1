@@ -1,0 +1,90 @@
+package assignment;
+
+class Chocolate{
+	// initialize variable
+	private int barCode;
+	private String name;
+	private int weight;
+	private int cost;
+	
+	public Chocolate(int barCode,String name,int weight,int cost) {
+		this.barCode=barCode;
+		this.name = name;
+		this.weight= weight;
+		this.cost = cost;
+	}
+	
+	
+	
+	// get barcode
+	public int getBarCode() {
+		return barCode;
+	}
+	
+	public void setBarCode(int barCode) {
+		this.barCode = barCode;
+	}
+	
+		public String getName() {
+			return name;
+		}
+		
+		//set barcode
+		public void setName(String name) {
+			this.name = name;
+		}
+		
+		
+		// get barcode
+		public int getWeight() {
+			return weight;
+		}
+		
+		//set barcode
+		public void setWeight(int weight) {
+			this.weight = weight;
+		}
+		
+		public int getCost() {
+			return cost;
+		}
+		
+		
+		public void setCost(int cost) {
+			this.cost = cost;
+		}
+		
+}
+
+public class ChocolateTester {
+
+	public static void main(String[] args) {
+		
+		// create object of chocolate
+		Chocolate choco = new Chocolate(101,"Cadbury",12,10);
+//		
+		//Use getter methods to display the values
+		System.out.println("BarCode: "+choco.getBarCode());
+		System.out.println("Name: "+choco.getName());
+		System.out.println("Weight: "+choco.getWeight());
+		System.out.println("Cost: "+choco.getCost());
+		
+		System.out.println();
+
+		//Use setter methods to modify the values
+
+		choco.setBarCode(102);
+		choco.setName("Hershey's");
+		choco.setWeight(24);
+		choco.setCost(50);
+		
+		//Use getter methods to display the values
+		System.out.println("barCode: "+choco.getBarCode());
+		System.out.println("Name: "+choco.getName());
+		System.out.println("Weight: "+choco.getWeight());
+		System.out.println("Cost: "+choco.getCost());
+				
+		
+	}
+
+}
